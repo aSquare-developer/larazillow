@@ -8,7 +8,7 @@ class IndexController extends Controller
 {
     public function index() 
     {
-        return inertia('Index/Index');
+        return inertia('Index/Index', ['message' => 'Hello this is data from controller!']);
     }
 
     public function show() 
