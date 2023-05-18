@@ -7,15 +7,14 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-    public function index() 
+    public function index()
     {
-        dd(Listings::all());
         return inertia('Index/Index', ['message' => 'Hello this is data from controller!']);
     }
 
-    public function show() 
+    public function show()
     {
         return inertia('Index/Show');
     }
-    
+
 }

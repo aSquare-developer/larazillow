@@ -38,7 +38,7 @@ class ListingController extends Controller
     public function show(Listings $listing)
     {
         return inertia('Listing/Show',
-            ['listings' => $listing]);
+            ['listing' => $listing]);
     }
 
     /**
