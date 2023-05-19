@@ -21,7 +21,7 @@ class ListingController extends Controller
      */
     public function create()
     {
-        //
+        return inertia('Listing/Create');
     }
 
     /**
@@ -37,6 +37,7 @@ class ListingController extends Controller
      */
     public function show(Listings $listing)
     {
+        $_SERVER;
         return inertia('Listing/Show',
             ['listing' => $listing]);
     }
