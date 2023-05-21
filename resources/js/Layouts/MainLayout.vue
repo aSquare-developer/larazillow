@@ -4,6 +4,7 @@
             <li><Link href="/">Home Page</Link></li>
             <li><Link href="/show">Show Page</Link></li>
             <li><Link href="/listing">Listing</Link></li>
+            <li><Link href="/listing/create">New Listing</Link></li>
         </ul>
     </div>
 
