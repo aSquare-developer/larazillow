@@ -1,7 +1,11 @@
 <template>
-    <Link href="/">Home Page</Link>
-    <Link href="/show">Show Page</Link>
-    <Link href="/listing">Listing</Link>
+    <div>
+        <ul>
+            <li><Link href="/">Home Page</Link></li>
+            <li><Link href="/show">Show Page</Link></li>
+            <li><Link href="/listing">Listing</Link></li>
+        </ul>
+    </div>
 
     <div>The page with time {{ timer }}</div>
 
