@@ -64,7 +64,7 @@
 </template>
 
 <script setup>
-import { useForm } from "@inertiajs/vue3";
+import {router, useForm} from "@inertiajs/vue3";
 
 const props = defineProps({
     listing: Object
@@ -81,7 +81,7 @@ const form = useForm({
     price: 0,
 })
 
-const update = () => form.put(`/listing/${props.listing.id}`)
+const update = () => form.put(route('listing.update', props.listing.id))
 </script>
 
 <style scoped>

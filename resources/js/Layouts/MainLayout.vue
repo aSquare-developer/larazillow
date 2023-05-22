@@ -3,8 +3,8 @@
         <ul>
             <li><Link href="/">Home Page</Link></li>
             <li><Link href="/show">Show Page</Link></li>
-            <li><Link href="/listing">Listing</Link></li>
-            <li><Link href="/listing/create">New Listing</Link></li>
+            <li><Link :href="route('listing.index')">Listing</Link></li>
+            <li><Link :href="route('listing.create')">New Listing</Link></li>
         </ul>
     </div>
 
